@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visualización 3D con A-Frame</title>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <!-- Cargar el modelo 3D -->
+        <a-entity gltf-model="url(assets/PINGUI.gl)"></a-entity>
+        <!-- Configurar la cámara -->
+        <a-camera position="0 1.6 0"></a-camera>
+        <!-- Ajustar las luces y otros elementos según sea necesario -->
+        <a-light type="ambient" color="#333"></a-light>
+        <a-light type="directional" color="#fff" intensity="0.5" position="2 4 3"></a-light>
+    </a-scene>
+</body>
+</html>
